@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">DunSceal</string>
+    <string name="add_dun">New Dun</string>
+    <string name="edit_dun">Edit Dun</string>
+    <string name="dun_marked_complete">Dun marked complete</string>
+    <string name="dun_marked_active">Dun marked active</string>
+    <string name="loading_duns_error">Error while loading duns</string>
+    <string name="completed_duns_cleared">Completed duns cleared</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_clear">Clear completed</string>
+    <string name="menu_delete_dun">Delete dun</string>
+    <string name="navigation_view_header_title">Todo</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Enter your dun here.</string>
+    <string name="empty_dun_message">Duns cannot be empty</string>
+    <string name="successfully_saved_dun_message">Dun saved</string>
+    <string name="list_title">Dun List</string>
+    <string name="statistics_title">Statistics</string>
+    <string name="statistics_no_duns">You have no duns.</string>
+    <string name="statistics_active_duns">Planned duns: %.1f%%</string>
+    <string name="statistics_completed_duns">Completed duns: %.1f%%</string>
+    <string name="statistics_error">Error loading statistics.</string>
+    <string name="no_data">No data</string>
+    <string name="loading">LOADING</string>
+
+    <string-array name="list_duns_array">
+        <item>@string/nav_all</item>
+        <item>@string/nav_active</item>
+        <item>@string/nav_completed</item>
+    </string-array>
+    <string name="nav_all">All</string>
+    <string name="nav_active">Planned</string>
+    <string name="nav_completed">Completed</string>
+    <string name="label_all">All Duns</string>
+    <string name="label_active">Planned Duns</string>
+    <string name="label_completed">Completed Duns</string>
+    <string name="no_duns_all">You have no duns!</string>
+    <string name="no_duns_active">You have no active duns!</string>
+    <string name="no_duns_completed">You have no completed duns!</string>
+    <string name="refresh">Refresh</string>
+    <string name="successfully_deleted_dun_message">Dun was deleted</string>
+    <string name="successfully_added_dun_message">Dun added</string>
+    <string name="no_data_description" />
+
+    <!-- Content Descriptions -->
+    <string name="duns_header_image_content_description">Duns header image</string>
+    <string name="no_duns_image_content_description">No duns image</string>
+
+
+    <!-- Login/Signup activities -->
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_user_name">Name</string>
+    <string name="hint_user_email">Email</string>
+    <string name="hint_user_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">dun</string>
+
+    <!-- dun -->
+    <string name="select_dunsceal_image">Select dunsceal image</string>
+
+    <!-- fonts -->
+
+    <!-- snowy -->
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="tab_text_4">Tab 4</string>
+
+    <!-- Generic -->
+    <string name="app_started">App Started</string>
+
+    <!-- donations -->
+
+    <string name="hint_dunTitle">Dun Title</string>
+    <string name="hint_dunDescription">Description </string>
+    <string name="button_addDun">Add Dun</string>
+    <string name="menu_addDun">Add</string>
+    <string name="menu_cancelDun">Cancel</string>
+    <string name="enter_dun_title"> Please enter a Dun Title </string>
+    <string name="save_dun"> Save Dun </string>
+    <string name="button_addImage"> Add Image </string>
+    <string name="change_dun_image">Change dun image</string>
+    <string name="button_location">Set Location</string>
+
+    <!-- dun2 -->
+    <string name="activity_sample_code">ViewPager2 Demos</string>
+    <string name="label_orientation">Orientation:</string>
+    <string name="label_jump_to">Jump to:</string>
+    <string name="label_jump">Jump</string>
+
+</resources>
