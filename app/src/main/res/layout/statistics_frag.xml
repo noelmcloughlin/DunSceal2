@@ -25,7 +25,7 @@
             type="org.noel.dunsceal.viewmodel.StatisticsViewModel" />
     </data>
 
-    <org.noel.dunsceal.util.ScrollChildSwipeRefreshLayout
+    <org.noel.dunsceal.main.ScrollChildSwipeRefreshLayout
         android:id="@+id/refresh_layout"
         app:refreshing="@{viewmodel.dataLoading}"
         app:onRefreshListener="@{viewmodel::refresh}"
@@ -78,5 +78,5 @@
             </LinearLayout>
         </LinearLayout>
 
-    </org.noel.dunsceal.util.ScrollChildSwipeRefreshLayout>
+    </org.noel.dunsceal.main.ScrollChildSwipeRefreshLayout>
 </layout>

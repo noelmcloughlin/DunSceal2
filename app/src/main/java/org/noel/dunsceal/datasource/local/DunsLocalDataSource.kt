@@ -13,17 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.noel.dunsceal.data.source.local.relationalDB
+package org.noel.dunsceal.datasource.local
 
-import org.noel.dunsceal.data.Result
-import org.noel.dunsceal.data.Result.Error
-import org.noel.dunsceal.data.Result.Success
-import org.noel.dunsceal.data.Dun
-import org.noel.dunsceal.data.source.DunsDataSource
+import org.noel.dunsceal.util.Result
+import org.noel.dunsceal.util.Result.Error
+import org.noel.dunsceal.util.Result.Success
+import org.noel.dunsceal.model.Dun
+import org.noel.dunsceal.datasource.DunsDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import org.noel.dunsceal.data.source.local.relationalDB.DunsDao
 
 /**
  * Concrete implementation of a data source as a db.
@@ -56,6 +55,10 @@ class DunsLocalDataSource internal constructor(
 
     override suspend fun saveDun(dun: Dun) = withContext(ioDispatcher) {
         dunsDao.insertDun(dun)
+    }
+
+    override suspend fun updateDun(dun: Dun) = withContext(ioDispatcher) {
+        dunsDao.updateDun(dun)
     }
 
     override suspend fun completeDun(dun: Dun) = withContext(ioDispatcher) {

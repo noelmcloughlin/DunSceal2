@@ -1,4 +1,4 @@
-package org.noel.dunsceal.main
+package org.noel.dunsceal.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,6 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import org.noel.dunsceal.R
-import org.noel.dunsceal.activity.auth.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
 

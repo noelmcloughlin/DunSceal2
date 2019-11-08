@@ -25,12 +25,12 @@ enum class DunsFilterType {
     ALL_TASKS,
 
     /**
-     * Filters only the active (not completed yet) duns.
+     * Filters only the active (not isCompleted yet) duns.
      */
     ACTIVE_TASKS,
 
     /**
-     * Filters only the completed duns.
+     * Filters only the isCompleted duns.
      */
     COMPLETED_TASKS
 }

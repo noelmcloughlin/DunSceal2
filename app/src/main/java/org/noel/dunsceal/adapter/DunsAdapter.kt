@@ -20,7 +20,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.noel.dunsceal.data.Dun
+import org.noel.dunsceal.model.Dun
     import org.noel.dunsceal.databinding.DunItemBinding
     import org.noel.dunsceal.viewmodel.DunsViewModel
 

@@ -26,8 +26,8 @@
     <string name="menu_clear">Clear completed</string>
     <string name="menu_delete_dun">Delete dun</string>
     <string name="navigation_view_header_title">Todo</string>
-    <string name="title_hint">Title</string>
-    <string name="description_hint">Enter your dun here.</string>
+    <string name="title_hint">Dun Title</string>
+    <string name="description_hint">Dun description and comments</string>
     <string name="empty_dun_message">Duns cannot be empty</string>
     <string name="successfully_saved_dun_message">Dun saved</string>
     <string name="list_title">Dun List</string>

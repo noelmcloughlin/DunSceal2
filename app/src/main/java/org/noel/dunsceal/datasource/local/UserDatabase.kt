@@ -1,4 +1,4 @@
-package org.noel.dunsceal.helpers
+package org.noel.dunsceal.datasource.local
 
 import android.content.ContentValues
 import android.content.Context
@@ -9,7 +9,7 @@ import org.noel.dunsceal.model.DunUser
 /**
  * Created by lalit on 9/12/2016.
  */
-class UserDatabaseHelper(context: Context) : SQLiteOpenHelper(context,
+class UserDatabase(context: Context) : SQLiteOpenHelper(context,
     DATABASE_NAME, null,
     DATABASE_VERSION
 ) {
@@ -205,7 +205,7 @@ class UserDatabaseHelper(context: Context) : SQLiteOpenHelper(context,
         // Database Name
         private val DATABASE_NAME = "UserManager.db"
 
-        // DunUser table name
+        // DunUser table title
         private val TABLE_USER = "user"
 
         // DunUser Table Columns names

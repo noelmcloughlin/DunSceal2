@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="@color/colorBackground"
     android:background="@color/colorBackground"
-    tools:context="org.noel.dunsceal.main.SplashActivity">
+    tools:context="org.noel.dunsceal.activity.SplashActivity">
 
 
     <ImageView

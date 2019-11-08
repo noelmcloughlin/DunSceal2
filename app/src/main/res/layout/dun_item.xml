@@ -22,7 +22,7 @@
 
         <variable
             name="dun"
-            type="org.noel.dunsceal.data.Dun" />
+            type="org.noel.dunsceal.model.Dun" />
 
         <variable
             name="viewmodel"

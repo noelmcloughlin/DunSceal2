@@ -16,7 +16,7 @@
 
 package org.noel.dunsceal.util
 
-import org.noel.dunsceal.data.Dun
+import org.noel.dunsceal.model.Dun
 
 /**
  * Function that does some trivial computation. Used to showcase unit tests.

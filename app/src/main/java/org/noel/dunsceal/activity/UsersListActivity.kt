@@ -1,4 +1,4 @@
-package org.noel.dunsceal.activity.auth
+package org.noel.dunsceal.activity
 
 import android.os.AsyncTask
 import android.os.Bundle
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import org.noel.dunsceal.R
 import org.noel.dunsceal.adapters.auth.UsersRecyclerAdapter
 import org.noel.dunsceal.model.DunUser
-import org.noel.dunsceal.helpers.UserDatabaseHelper
+import org.noel.dunsceal.datasource.local.UserDatabase
 
 class UsersListActivity : AppCompatActivity() {
 
@@ -20,7 +20,7 @@ class UsersListActivity : AppCompatActivity() {
     private lateinit var recyclerViewUsers: RecyclerView
     private lateinit var listUsers: MutableList<DunUser>
     private lateinit var usersRecyclerAdapter: UsersRecyclerAdapter
-    private lateinit var userDatabaseHelper: UserDatabaseHelper
+    private lateinit var userDatabase: UserDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +51,7 @@ class UsersListActivity : AppCompatActivity() {
         recyclerViewUsers.itemAnimator = DefaultItemAnimator()
         recyclerViewUsers.setHasFixedSize(true)
         recyclerViewUsers.adapter = usersRecyclerAdapter
-        userDatabaseHelper = UserDatabaseHelper(activity)
+        userDatabase = UserDatabase(activity)
 
         val emailFromIntent = intent.getStringExtra("EMAIL")
         textViewName.text = emailFromIntent
@@ -66,7 +66,7 @@ class UsersListActivity : AppCompatActivity() {
     inner class GetDataFromSQLite : AsyncTask<Void, Void, List<DunUser>>() {
 
         override fun doInBackground(vararg p0: Void?): List<DunUser> {
-            return userDatabaseHelper.getAllUser()
+            return userDatabase.getAllUser()
         }
 
         override fun onPostExecute(result: List<DunUser>?) {

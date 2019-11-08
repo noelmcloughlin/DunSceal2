@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.noel.dunsceal.data
+package org.noel.dunsceal.util
 
-import org.noel.dunsceal.data.Result.Success
+import org.noel.dunsceal.util.Result.Success
 
 /**
  * A generic class that holds a value with its loading status.

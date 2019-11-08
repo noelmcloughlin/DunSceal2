@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.noel.dunsceal.util
+package org.noel.dunsceal.main
 
 import android.content.Context
 import android.util.AttributeSet

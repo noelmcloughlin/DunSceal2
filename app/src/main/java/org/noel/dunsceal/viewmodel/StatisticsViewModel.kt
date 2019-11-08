@@ -20,9 +20,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import org.noel.dunsceal.data.Result.Success
-import org.noel.dunsceal.data.Dun
-import org.noel.dunsceal.data.source.DunsRepository
+import org.noel.dunsceal.util.Result.Success
+import org.noel.dunsceal.model.Dun
+import org.noel.dunsceal.datasource.DunsRepository
 import org.noel.dunsceal.util.wrapEspressoIdlingResource
 import kotlinx.coroutines.launch
 import org.noel.dunsceal.util.getPlannedAndCompletedStats

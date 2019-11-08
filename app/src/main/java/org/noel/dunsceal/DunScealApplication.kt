@@ -14,29 +14,28 @@
  * limitations under the License.
  */
 
-package org.noel.dunsceal.main
+package org.noel.dunsceal
 
 import android.app.Application
-import org.noel.dunsceal.data.ServiceLocator
-import org.noel.dunsceal.data.source.DunsRepository
-import org.noel.dunsceal.BuildConfig
-import timber.log.Timber
-import timber.log.Timber.DebugTree
+import org.jetbrains.anko.AnkoLogger
+import org.jetbrains.anko.info
+import org.noel.dunsceal.datasource.DunsRepository
+import org.noel.dunsceal.datasource.local.JsonDatabase
 
 /**
  * An application that lazily provides a repository. Note that this Service Locator pattern is
  * used to simplify the sample. Consider a Dependency Injection framework.
- *
- * Also, sets up Timber in the DEBUG BuildConfig. Read Timber's documentation for production setups.
- */
-class DunScealApplication : Application() {
+ **/
+class DunScealApplication : Application(), AnkoLogger {
 
-    // Depends on the flavor,
-    val dunRepository: DunsRepository
-        get() = ServiceLocator.provideDunsRepository(this)
+    val dunsRepository: DunsRepository
+        get() = JsonDatabase(this)
 
     override fun onCreate() {
         super.onCreate()
-        if (BuildConfig.DEBUG) Timber.plant(DebugTree())
+        info("Placemark started")
+
+        //Timber.tag("Main").v((R.string.app_name + R.string.app_started).toString())
+
     }
 }

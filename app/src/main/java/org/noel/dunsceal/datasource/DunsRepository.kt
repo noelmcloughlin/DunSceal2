@@ -13,21 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.noel.dunsceal.data.source
 
-import org.noel.dunsceal.data.Result
-import org.noel.dunsceal.data.Dun
+package org.noel.dunsceal.datasource
+
+import org.noel.dunsceal.util.Result
+import org.noel.dunsceal.model.Dun
 
 /**
- * Main entry point for accessing duns data.
+ * Interface to the data layer.
  */
-interface DunsDataSource {
+interface DunsRepository {
 
     suspend fun getDuns(): Result<List<Dun>>
 
-    suspend fun getDun(dunId: String): Result<Dun>
+    suspend fun getDuns(forceUpdate: Boolean = false): Result<List<Dun>>
+
+    suspend fun getDun(taskId: String, forceUpdate: Boolean = false): Result<Dun>
 
     suspend fun saveDun(dun: Dun)
+
+    suspend fun updateDun(dun: Dun)
 
     suspend fun completeDun(dun: Dun)
 

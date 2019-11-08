@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
 
 
-        <org.noel.dunsceal.util.ScrollChildSwipeRefreshLayout
+        <org.noel.dunsceal.main.ScrollChildSwipeRefreshLayout
             android:id="@+id/refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -110,7 +110,7 @@
 
                 </RelativeLayout>
             </LinearLayout>
-        </org.noel.dunsceal.util.ScrollChildSwipeRefreshLayout>
+        </org.noel.dunsceal.main.ScrollChildSwipeRefreshLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/edit_dun_fab"

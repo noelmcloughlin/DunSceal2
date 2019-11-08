@@ -19,7 +19,7 @@ import android.graphics.Paint
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.noel.dunsceal.data.Dun
+import org.noel.dunsceal.model.Dun
 
 /**
  * [BindingAdapter]s for the [Dun]s list.

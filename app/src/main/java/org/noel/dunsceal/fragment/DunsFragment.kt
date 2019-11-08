@@ -30,7 +30,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import org.noel.dunsceal.util.EventObserver
 import org.noel.dunsceal.R
-import org.noel.dunsceal.data.Dun
+import org.noel.dunsceal.model.Dun
 import org.noel.dunsceal.databinding.DunsFragBinding
 import org.noel.dunsceal.util.setupRefreshLayout
 import org.noel.dunsceal.util.setupSnackbar
@@ -42,7 +42,7 @@ import org.noel.dunsceal.viewmodel.DunsViewModel
 import timber.log.Timber
 
 /**
- * Display a grid of [Dun]s. User can choose to view all, active or completed duns.
+ * Display a grid of [Dun]s. User can choose to view all, active or isCompleted duns.
  */
 class DunsFragment : Fragment() {
 

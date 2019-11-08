@@ -1,4 +1,4 @@
-package org.noel.dunsceal.activity.auth
+package org.noel.dunsceal.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,8 +11,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.google.android.material.snackbar.Snackbar
 import org.noel.dunsceal.R
-import org.noel.dunsceal.activity.DunsActivity
-import org.noel.dunsceal.helpers.UserDatabaseHelper
+import org.noel.dunsceal.datasource.local.UserDatabase
 import org.noel.dunsceal.helpers.UserInputValidation
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
@@ -26,7 +25,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var appCompatButtonLogin: AppCompatButton
     private lateinit var textViewLinkRegister: AppCompatTextView
     private lateinit var userInputValidation: UserInputValidation
-    private lateinit var userDatabaseHelper: UserDatabaseHelper
+    private lateinit var userDatabase: UserDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,7 +66,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
      * This method is to initialize objects to be used
      */
     private fun initObjects() {
-        userDatabaseHelper = UserDatabaseHelper(activity)
+        userDatabase = UserDatabase(activity)
         userInputValidation = UserInputValidation(activity)
     }
 
@@ -116,7 +115,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             return
         }
 
-        if (userDatabaseHelper!!.checkUser(
+        if (userDatabase!!.checkUser(
                 textInputEditTextEmail!!.text.toString().trim { it <= ' ' },
                 textInputEditTextPassword!!.text.toString().trim { it <= ' ' })
         ) {

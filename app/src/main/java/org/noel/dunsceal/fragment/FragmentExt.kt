@@ -20,10 +20,10 @@ package org.noel.dunsceal.fragment
  */
 
 import androidx.fragment.app.Fragment
-import org.noel.dunsceal.main.DunScealApplication
-import org.noel.dunsceal.viewmodel.ViewModelFactory
+import org.noel.dunsceal.DunScealApplication
+import org.noel.dunsceal.main.ViewModelFactory
 
 fun Fragment.getViewModelFactory(): ViewModelFactory {
-    val repository = (requireContext().applicationContext as DunScealApplication).dunRepository
+    val repository = (requireContext().applicationContext as DunScealApplication).dunsRepository
     return ViewModelFactory(repository)
 }

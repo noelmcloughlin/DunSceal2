@@ -27,6 +27,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import org.noel.dunsceal.R
 import com.google.android.material.snackbar.Snackbar
+import org.noel.dunsceal.main.ScrollChildSwipeRefreshLayout
 
 /**
  * Transforms static java function Snackbar.make() to an extension function on View.
